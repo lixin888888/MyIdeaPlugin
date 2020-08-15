@@ -1,0 +1,41 @@
+<idea-plugin>
+  <id>com.your.company.unique.plugin.id</id>
+  <name>Hello</name>
+  <version>1.0</version>
+  <vendor email="1377204804@qq.com" url="http://www.baidu.com">lixin</vendor>
+
+  <description><![CDATA[
+      short description for your plugin here.<br>
+      <em> HTML tags may be used</em>
+    ]]></description>
+
+  <change-notes><![CDATA[
+       change notes here.<br>
+      <em> HTML tags may be used</em>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="ShowSelectText" class="com.plugin.HelloIdea" text = "HelloIdea">
+      <add-to-group group-id="WindowMenu" anchor="first"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="meta I"/>
+    </action>
+
+  </actions>
+
+
+</idea-plugin>
